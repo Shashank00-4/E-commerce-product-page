@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 15;
+    padding: 20;
+}
+
+nav li {
+    margin: 0 4em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+}
+
+.product-gallery {
+    flex: 1;
+    max-width: 500px;
+}
+
+.product-gallery img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.product-details {
+    flex: 1;
+    max-width: 500px;
+    padding: 1em;
+}
+
+.product-details h1 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.description {
+    margin: 1em 0;
+}
+
+.cta {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.cta.secondary {
+    background-color: #007bff;
+}
+
+.cta:hover {
+    background-color: #218838;
+}
+
+.cta.secondary:hover {
+    background-color: #0056b3;
+}
+
+.reviews {
+    margin-top: 2em;
+}
+
+.reviews h2 {
+    margin-top: 0;
+}
+
+.related-products {
+    text-align: center;
+    padding: 2em;
+}
+
+.related-products h2 {
+    margin-bottom: 1em;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        padding: 0;
+    }
+
+    .cta {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    section div:first-child{
+        height: 100px;
+        width: 500px;
+    }
+}
